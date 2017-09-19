@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Roboto:300,500">
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-messaging.js"></script>
+
+  <!-- Leave out Storage -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-storage.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">WebSiteName</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<button id="btnLogout" class="btn hide">Log out</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	 <div class="mainDiv ">
+  		<b>Email:</b>
+		<input id="txtEmail" type="email" placeholder="email"></br>
+		<b>Senha:</b>
+		<input type="password" id="txtPassword" placeholder="Password"></br>
+
+		<button id="btnLogin" class="btn btn-action">Log in</button>
+
+		<button id="btnSignUp" class="btn btn-secondary">Sing</button>
+
+		<button id="btnLogout" class="btn btn-action hide">Log out</button>
+ 
+	 </div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>
